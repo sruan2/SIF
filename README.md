@@ -39,3 +39,7 @@ For technical details and full experimental results, see [the paper](https://ope
 	year = {2017}
 }
 ```
+
+# Sherry's Notes
+## Virtual Environment
+`~/env/sif'
