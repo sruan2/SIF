@@ -41,5 +41,5 @@ For technical details and full experimental results, see [the paper](https://ope
 ```
 
 # Sherry's Notes
-## Virtual Environment
-`~/env/sif'
+## Local virtual environment
+`source ~/env/sif/bin/activate`
