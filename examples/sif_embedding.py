@@ -12,7 +12,7 @@ rmpc = 1 # number of principal components to remove in SIF weighting scheme
 sentences = ['this is an example sentence', 
 			 'this is another sentence that is slightly longer',
 			 'this is the same sentence',
-			 'this is an example phrase',
+			 'this is not the same sentence',
 			 'this is me']
 
 # load word vectors
