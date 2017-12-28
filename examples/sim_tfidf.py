@@ -5,7 +5,7 @@ import data_io, sim_algo, eval, params
 
 ## run
 wordfiles = [#'../data/paragram_sl999_small.txt', # need to download it from John Wieting's github (https://github.com/jwieting/iclr2016)
-    '../data/glove.840B.300d.txt'  # need to download it first
+    '/Users/sherryruan/data/glove/glove.6B/glove.6B.300d.txt'  # need to download it first
     ]
 rmpcs = [0,1]
 
@@ -21,10 +21,10 @@ for wordfile in wordfiles:
     (words, We) = data_io.getWordmap(wordfile)
     weight4ind = data_io.getIDFWeight(wordfile)
     for rmpc in rmpcs:
-        print 'word vectors loaded from %s' % wordfile
-        print 'word weights computed from idf'
+        print('word vectors loaded from %s' % wordfile)
+        print('word weights computed from idf')
         params.rmpc = rmpc
-        print 'remove the first %d principal components' % rmpc
+        print('remove the first %d principal components' % rmpc)
         # eval just one example dataset
         parr, sarr = eval.sim_evaluate_one(We, words, weight4ind, sim_algo.weighted_average_sim_rmpc, params)
         ## eval all datasets; need to obtained datasets from John Wieting (https://github.com/jwieting/iclr2016)

@@ -1,0 +1,10 @@
+word vectors loaded from /Users/sherryruan/data/glove/glove.6B/glove.6B.300d.txt
+word weights computed from idf
+remove the first 0 principal components
+                    MSRpar2012   0.504634
+
+word vectors loaded from /Users/sherryruan/data/glove/glove.6B/glove.6B.300d.txt
+word weights computed from idf
+remove the first 1 principal components
+                    MSRpar2012   0.365670
+

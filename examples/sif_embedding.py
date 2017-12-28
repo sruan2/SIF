@@ -24,3 +24,18 @@ params = params.params()
 params.rmpc = rmpc
 # get SIF embedding
 embedding = SIF_embedding.SIF_embedding(We, x, w, params) # embedding[i,:] is the embedding for sentence i
+
+s1 = embedding[0,:]
+s2 = embedding[1,:]
+
+print(s1)
+
+# =========== Compute Coisine Similarity of first two sentences ===================
+def semantic_similarity(vec_1, vec_2):
+    return (np.dot(vec_1, vec_2.T) / (np.linalg.norm(vec_1) * np.linalg.norm(vec_2)))[0,0] # shape is (0,0)
+
+print(semantic_similarity(s1, s2))
+
+
+
+
