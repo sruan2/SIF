@@ -1,5 +1,5 @@
-DATADIR=../data
-WORDFILE=$DATADIR/glove.840B.300d.txt
+DATADIR=~/data/glove/glove.6B
+WORDFILE=$DATADIR/glove.6B.300d.txt
 
 # download word vector
 if [ ! -e $WORDFILE ]; then
